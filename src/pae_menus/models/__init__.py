@@ -3,6 +3,12 @@ from .ingredient import Ingredient
 from .dish import Dish
 from .menu_cycle import MenuCycle
 from .menu_schedule import MenuSchedule, MenuScheduleAssignmentRequest, MenuScheduleAssignmentSummary
+from .nutritional_analysis import (
+    NutritionalAnalysisReport,
+    SimplifiedNutritionalSummary,
+    NutritionalRequirements,
+    NutritionalComparisonReport
+)
 
 __all__ = [
     "Ingredient",
@@ -11,4 +17,8 @@ __all__ = [
     "MenuSchedule",
     "MenuScheduleAssignmentRequest",
     "MenuScheduleAssignmentSummary",
+    "NutritionalAnalysisReport",
+    "SimplifiedNutritionalSummary",
+    "NutritionalRequirements",
+    "NutritionalComparisonReport",
 ]

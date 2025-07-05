@@ -43,6 +43,7 @@ class DishBase(BaseModel):
     compatible_meal_types: List[MealType] = Field(..., description="Compatible meal types for this dish")
     recipe: Recipe = Field(..., description="Recipe of the dish")
     nutritional_info: Optional[NutritionalInfo] = Field(default=None, description="Nutritional information and photo URL")
+    dish_type: Optional[DishType] = Field(None, description="Food group classification of the dish")
 
     @field_validator('name')
     @classmethod
